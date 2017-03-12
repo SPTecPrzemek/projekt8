@@ -1,12 +1,22 @@
 /**
- * Created by stasiakprzemyslaw on 26.02.2017.
+ * Created by stasiakprzemyslaw on 25.02.2017.
  */
-function zamianafunc() {
-    var text = "Papugi koszą trawę, unosząc się nad ziemią 15 centymetrów, na czerwonych dywanach.";
-    var text2 = "Zielone słonie";
-    text2.toUpperCase();
 
-    text = text.replace('Papugi', text2);
-    console.log(text.slice(0, text.length/2));
+function tabfunc() {
+    var femaleNames = ['Asia', 'Kasia', 'Ola','Jola'];
+    var maleNames = ['Piotrek', 'Marek', 'Arek', 'Jarek'];
+
+    var allNames = femaleNames.concat(maleNames);
+
+    var newName = document.getElementById('getName').value;
+
+    if (allNames.indexOf(newName)== -1) {
+        allNames.push(newName);
+    } else {
+        console.log("Imie jest juz w tablicy");
+    }
+    console.log(allNames);
+    console.log(femaleNames);
+    console.log(maleNames);
 }
 

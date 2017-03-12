@@ -1,23 +1,22 @@
 /**
- * Created by stasiakprzemyslaw on 25.02.2017.
+ * Created by stasiakprzemyslaw on 24.02.2017.
  */
 
-function Oblicz() {
-    var a = document.getElementById('textFA').value;
-    var h = document.getElementById('textFH').value;
-    var wynik = getTriangleArea(a,h);
-    console.log(wynik);
-    var wynik2 = getTriangleArea(2,4);
-    console.log(wynik2);
-    var wynik5 = getTriangleArea(6,8);
-    console.log(wynik5);
-}
+function delta(){
+    var a = document.getElementById('texta').value;
+    var b = document.getElementById('textb').value;
+    var value = (a*a) + (2*a*b) - (b*b);
+    console.log(a);
+    console.log(b);
+    console.log(value);
 
-function getTriangleArea(a,h) {
-    if ((a <= 0) || ( h <= 0)) {
-        console.log("Nieprawidłowe Dane");
+    if (value < 0) {
+        console.log("Waynik mnniejszy od 0");
+    } else if (value == 0) {
+        console.log("Wynik równy 0");
+    } else if (value > 0) {
+        console.log("Wynik większy od 0");
     } else {
-        var value = a*h/2;
-        return value;
+        console.log("Nipooprawne Dane");
     }
 }

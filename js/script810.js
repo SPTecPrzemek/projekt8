@@ -1,10 +1,15 @@
 /**
- * Created by stasiakprzemyslaw on 27.02.2017.
+ * Created by stasiakprzemyslaw on 26.02.2017.
  */
-var add = document.getElementById('addElem');
-var list = document.getElementById('list');
 
-add.addEventListener('click', function(event) {
-    var listNumber = document.getElementsByTagName('li').length;
-    console.log(listNumber);
-    list.innerHTML += '<li>item ' + listNumber + '</li>' });
+function start() {
+    var button = document.getElementsByClassName("button");
+    console.log(button);
+    butoonLenght = button.length;
+    console.log(butoonLenght);
+
+    for (var i=0; i < butoonLenght; i++) {
+        //var buttonTXT = button[i].innerText;
+        console.log(buttonTXT = button[i].innerText);
+    }
+}

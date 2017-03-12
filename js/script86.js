@@ -1,26 +1,28 @@
+
 /**
  * Created by stasiakprzemyslaw on 25.02.2017.
  */
 
-function tabfunc() {
-    var femaleNames = ['Asia', 'Kasia', 'Ola','Jola'];
-    var maleNames = ['Piotrek', 'Marek', 'Arek', 'Jarek'];
-
-    var allNames = femaleNames.concat(maleNames);
-
-    var newName = document.getElementById('getName').value;
-
-    if (allNames.indexOf(newName)== -1)
-    {
-        allNames.push(newName);
-    } else {
-        console.log("Imie jest juz w tablicy");
-    }
-    console.log(allNames);
-
-
+function zadTwFun() {
+    var a = document.getElementById('textFA').value;
+    var h = document.getElementById('textFH').value;
+    var wynik = getTriangleArea(a,h);
+    console.log(wynik);
+    var wynik2 = getTriangleArea(2,4);
+    console.log(wynik2);
+    var wynik5 = getTriangleArea(6,8);
+    console.log(wynik5);
+    var wynik6 =  getTriangleArea(0,2);
+    console.log(wynik6);
 }
 
+function getTriangleArea(a,h) {
+    if ((a <= 0) || ( h <= 0)) {
+        console.log("Nieprawidłowe Dane");
+    } else {
+        return a*h/2;
+    }
+}
 
 
 
