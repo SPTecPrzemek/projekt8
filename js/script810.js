@@ -10,6 +10,6 @@ function start() {
 
     for (var i=0; i < butoonLenght; i++) {
         //var buttonTXT = button[i].innerText;
-        console.log(buttonTXT = button[i].innerText);
+        console.log(button[i].innerText);
     }
 }

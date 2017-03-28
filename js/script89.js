@@ -9,7 +9,7 @@ function rysuj() {
 }
 
 function rysujChoinke(wysokoscChoinki) {
-    for (var i=0; i<=wysokoscChoinki; i++) {
+    for (var i=1; i<=wysokoscChoinki; i++) {
         var star = '';
         for (var j=0; j<(i*2)-1; j++) {
             star += '*';
