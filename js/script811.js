@@ -1,5 +1,5 @@
 /**
- * Created by stasiakprzemyslaw on 12.03.2017.
+ *  Created by stasiakprzemyslaw on 12.03.2017.
  */
 var add = document.getElementById('addElem');
 var list = document.getElementById('list');
